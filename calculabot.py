@@ -46,6 +46,7 @@ def graph2d(update, context):
         y = ne.evaluate(function)
         ax = sns.lineplot(x=x, y=y, sort=False, lw=1)
         ax.figure.savefig("output.png")
+        plt.clf()
         context.bot.send_message(chat_id=update.message.chat_id, text='Sending Image...')
         context.bot.send_photo(chat_id=update.message.chat_id, photo=open('output.png', 'rb'))
     except:
@@ -66,6 +67,7 @@ def graph3d(update, context):
         plt.colorbar();
         plt.axis(aspect='image');
         plt.savefig('output.png')
+        plt.clf()
         context.bot.send_message(chat_id=update.message.chat_id, text='Sending Image...')
         context.bot.send_photo(chat_id=update.message.chat_id, photo=open('output.png', 'rb'))
     except:
