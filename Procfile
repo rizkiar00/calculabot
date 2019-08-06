@@ -1,1 +1,1 @@
-worker: python calculabot.py
+web: python calculabot.py
