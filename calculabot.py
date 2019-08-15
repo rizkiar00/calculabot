@@ -13,7 +13,7 @@ import numpy as np
 import numexpr as ne
 from matplotlib.colors import ListedColormap
 
-updater = Updater(token='900944674:AAHwA4UGb4WE5ybDh18FUrw8PVx0GPLSzns', use_context=True)
+updater = Updater(token=, use_context=True)
 dispatcher = updater.dispatcher
 
 import logging
